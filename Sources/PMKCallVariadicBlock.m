@@ -5,16 +5,11 @@
 #import <Foundation/NSError.h>
 #import <dispatch/once.h>
 #import <string.h>
+#import "PMKCallVariadicBlock.h"
 
 #ifndef PMKLog
 #define PMKLog NSLog
 #endif
-
-@interface PMKArray : NSObject {
-@public
-    id objs[3];
-    NSUInteger count;
-} @end
 
 @implementation PMKArray
 
@@ -105,7 +100,7 @@ static inline id _PMKCallVariadicBlock(id frock, id result) {
     }
 }
 
-static id PMKCallVariadicBlock(id frock, id result) {
+id PMKCallVariadicBlock(id frock, id result) {
     @try {
         return _PMKCallVariadicBlock(frock, result);
     } @catch (id thrown) {

@@ -3,7 +3,7 @@
 #else
     #import <PromiseKit/PromiseKit-Swift.h>
 #endif
-#import "PMKCallVariadicBlock.m"
+#import "PMKCallVariadicBlock.h"
 #import "AnyPromise+Private.h"
 #import "AnyPromise.h"
 

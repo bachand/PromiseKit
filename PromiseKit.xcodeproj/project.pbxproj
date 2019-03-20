@@ -86,6 +86,8 @@
 		C013F740204E5064006B57B1 /* JSUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013F73F204E5063006B57B1 /* JSUtils.swift */; };
 		C0244E5E2047A6CB00ACB4AC /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B0AC571D595E1B00FA21D9 /* PromiseKit.framework */; };
 		C0244E692047AC9F00ACB4AC /* AllTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0244E682047AC9F00ACB4AC /* AllTests.swift */; };
+		E4CD822B2242D2DD00F6DB8A /* PMKCallVariadicBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CD822A2242D21B00F6DB8A /* PMKCallVariadicBlock.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E4CD822C2242D51B00F6DB8A /* PMKCallVariadicBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B0AC711D595E6300FA21D9 /* PMKCallVariadicBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +231,7 @@
 		C013F73F204E5063006B57B1 /* JSUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSUtils.swift; path = "Tests/JS-A+/JSUtils.swift"; sourceTree = "<group>"; };
 		C0244E622047A6CB00ACB4AC /* PMKJSA+Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PMKJSA+Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0244E682047AC9F00ACB4AC /* AllTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllTests.swift; path = "Tests/JS-A+/AllTests.swift"; sourceTree = "<group>"; };
+		E4CD822A2242D21B00F6DB8A /* PMKCallVariadicBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PMKCallVariadicBlock.h; path = Sources/PMKCallVariadicBlock.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,8 +314,8 @@
 		630B60C01F2F73B000A1AEFE /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				634AAD2A1EAE517C00B17855 /* fwd.h */,
 				63B0AC631D595E6300FA21D9 /* AnyPromise.h */,
+				634AAD2A1EAE517C00B17855 /* fwd.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			children = (
 				63B0AC661D595E6300FA21D9 /* AnyPromise+Private.h */,
 				63B0AC6F1D595E6300FA21D9 /* NSMethodSignatureForBlock.m */,
+				E4CD822A2242D21B00F6DB8A /* PMKCallVariadicBlock.h */,
 				63B0AC711D595E6300FA21D9 /* PMKCallVariadicBlock.m */,
 			);
 			name = "Internal Utilities";
@@ -505,6 +509,7 @@
 				634AAD2B1EAE517C00B17855 /* fwd.h in Headers */,
 				63B0AC811D595E6300FA21D9 /* AnyPromise.h in Headers */,
 				63B0AC841D595E6300FA21D9 /* AnyPromise+Private.h in Headers */,
+				E4CD822B2242D2DD00F6DB8A /* PMKCallVariadicBlock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +746,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CD822C2242D51B00F6DB8A /* PMKCallVariadicBlock.m in Sources */,
 				636A29251F1C3089001229C2 /* race.swift in Sources */,
 				63B0AC9A1D595E6300FA21D9 /* when.swift in Sources */,
 				636A29271F1C3927001229C2 /* Resolver.swift in Sources */,
